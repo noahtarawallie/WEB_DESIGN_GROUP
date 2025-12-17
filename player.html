@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Academy of Sierra Leone - Players</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-futbol"></i>
+                <span>FASL</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="matche.html">Matches</a></li>
+                    <li><a href="player.html" class="active">Players</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Players</h1>
+            <p>Meet the talented footballers of Sierra Leone. Our academy nurtures players across all positions with professional training and development programs.</p>
+        </div>
+    </section>
+    
+    <!-- Players Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Player Roster</h2>
+            <div class="player-filters">
+                <button class="filter-btn active" data-filter="all">All Players</button>
+                <button class="filter-btn" data-filter="goalkeeper">Goalkeepers</button>
+                <button class="filter-btn" data-filter="defender">Defenders</button>
+                <button class="filter-btn" data-filter="midfielder">Midfielders</button>
+                <button class="filter-btn" data-filter="forward">Forwards</button>
+            </div>
+            
+            <div class="players-container">
+                <!-- Goalkeepers -->
+                <div class="player-card" data-position="goalkeeper">
+                    <img src="https://i.pinimg.com/1200x/3e/43/b2/3e43b28582719c8fbe39a327c964b940.jpg" alt="Abdul Karaja" class="player-img">
+                    <div class="player-info">
+                        <h3>Abdul Karajab</h3>
+                        <span class="player-position">Goalkeeper</span>
+                        <p class="player-age">Age: 20</p>
+                        <p class="player-history">Former club: Bo Rangers</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="goalkeeper">
+                    <img src="https://i.pinimg.com/736x/52/31/e6/5231e6bc31a34e74d09d2f689a497d69.jpg" alt="Noah Kamaral" class="player-img">
+                    <div class="player-info">
+                        <h3>Noah Kamaral</h3>
+                        <span class="player-position">Goalkeeper</span>
+                        <p class="player-age">Age: 12</p>
+                        <p class="player-history">Former club: East End Lions</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="goalkeeper">
+                    <img src="https://i.pinimg.com/1200x/78/2d/84/782d84c68a9e4ee34f68bdc488ee1846.jpg" alt="Ramir Joe" class="player-img">
+                    <div class="player-info">
+                        <h3>Ramir Joe</h3>
+                        <span class="player-position">Goalkeeper</span>
+                        <p class="player-age">Age: 14</p>
+                        <p class="player-history">Former club: FC Kallon</p>
+                    </div>
+                </div>
+                
+                <!-- Defenders -->
+                <div class="player-card" data-position="defender">
+                    <img src="https://i.pinimg.com/736x/26/9e/01/269e01a985b02e518e546a1caad1d8cf.jpg" alt="Eric Tarowalle" class="player-img">
+                    <div class="player-info">
+                        <h3>Eric Tarowalle</h3>
+                        <span class="player-position">Defender</span>
+                        <p class="player-age">Age: 16</p>
+                        <p class="player-history">Former club: Mighty Blackpool</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="defender">
+                    <img src="https://i.pinimg.com/1200x/83/b1/12/83b112c6522540366120f4e629d98116.jpg" alt="John Barber" class="player-img">
+                    <div class="player-info">
+                        <h3>John Barber</h3>
+                        <span class="player-position">Defender</span>
+                        <p class="player-age">Age: 19</p>
+                        <p class="player-history">Former club: FC Kallon</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="defender">
+                    <img src="https://i.pinimg.com/736x/19/9b/87/199b8785c88f464190e48c0302b27faa.jpg" alt="Kargabul Birinci" class="player-img">
+                    <div class="player-info">
+                        <h3>Kargabul Birinci</h3>
+                        <span class="player-position">Defender</span>
+                        <p class="player-age">Age: 16</p>
+                        <p class="player-history">Former club: Ports Authority FC</p>
+                    </div>
+                </div>
+                
+                <!-- Midfielders -->
+                <div class="player-card" data-position="midfielder">
+                    <img src="g.jpg" alt="Geriad Bockarie" class="player-img">
+                    <div class="player-info">
+                        <h3>Geriad Bockarie</h3>
+                        <span class="player-position">Midfielder</span>
+                        <p class="player-age">Age: 15</p>
+                        <p class="player-history">Former club: Mighty blackpool FC</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="midfielder">
+                    <img src="https://i.pinimg.com/736x/46/b1/7a/46b17a6f95997dd475dbcd332e4bdd22.jpg" alt="Tirachim Jamneh" class="player-img">
+                    <div class="player-info">
+                        <h3>Tirachim Jamneh</h3>
+                        <span class="player-position">Midfielder</span>
+                        <p class="player-age">Age: 18</p>
+                        <p class="player-history">Former club: Real Republicans</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="midfielder">
+                    <img src="ma.jpg" alt="Mohamed Marrah" class="player-img">
+                    <div class="player-info">
+                        <h3>Mohamed Marrah</h3>
+                        <span class="player-position">Midfielder</span>
+                        <p class="player-age">Age: 11</p>
+                        <p class="player-history">Former club: Diamond Stars</p>
+                    </div>
+                </div>
+                
+                <!-- Forwards -->
+                <div class="player-card" data-position="forward">
+                    <img src="j.jpg" alt="Fran J Williams" class="player-img">
+                    <div class="player-info">
+                        <h3>Frank J Williams</h3>
+                        <span class="player-position">Forward</span>
+                        <p class="player-age">Age: 15</p>
+                        <p class="player-history">Former club: Diamond Stars</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="forward">
+                    <img src="m.jpg" alt="Mourinho" class="player-img">
+                    <div class="player-info">
+                        <h3>Mourinho</h3>
+                        <span class="player-position">Forward</span>
+                        <p class="player-age">Age: 15</p>
+                        <p class="player-history">Former club: Old Edwardians</p>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-position="forward">
+                    <img src="https://i.pinimg.com/1200x/7e/93/92/7e9392d88151c7701ac47c92221903c8.jpg" alt="Idrisad Kanu" class="player-img">
+                    <div class="player-info">
+                        <h3>Idrisad Kanu</h3>
+                        <span class="player-position">Forward</span>
+                        <p class="player-age">Age: 17</p>
+                        <p class="player-history">Former club: Old Edwardians</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-futbol"></i>
+                        <span>FASL</span>
+                    </div>
+                    <p>Football Academy of Sierra Leone is committed to developing football talent and promoting the sport across the nation.</p>
+                <div class="social-links">
+                      <a href="#" title="Follow us on Twitter">
+                          <i class="fab fa-twitter"></i>
+                          <span class="sr-only">Twitter</span>
+                  </a>
+                      <a href="#" title="Like us on Facebook">
+                          <i class="fab fa-facebook-f"></i>
+                          <span class="sr-only">Facebook</span>
+                  </a>
+                      <a href="#" title="Follow us on Instagram">
+                           <i class="fab fa-instagram"></i>
+                           <span class="sr-only">Instagram</span>
+                  </a>
+                      <a href="#" title="Subscribe on YouTube">
+                           <i class="fab fa-youtube"></i>
+                           <span class="sr-only">YouTube</span>
+                  </a>
+                      <a href="#" title="Message us on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="sr-only">WhatsApp</span>
+                    </a>
+                </div>
+                </div>
+                <div class="footer-section">
+                  
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> No 7 Rainbow Street, Freetown, Sierra Leone</p>
+                    <p><i class="fas fa-phone"></i> +232 31-16-60-09</p>
+                    <p><i class="fas fa-envelope"></i> info@fasl.sierraleone</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Football Academy of Sierra Leone. All rights reserved.</p>
+                <p>Follow us on @FASL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
