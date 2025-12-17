@@ -1,0 +1,763 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1a3a6c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1a3a6c;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo i {
+    color: #f0c808;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: #f0c808;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #f0c808;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(26, 58, 108, 0.85), rgba(26, 58, 108, 0.9)), url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f0c808;
+    color: #1a3a6c;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e0b808;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Common Styles */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #f0c808;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* News Section */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.news-date {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Players Page */
+.player-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #1a3a6c;
+    color: white;
+}
+
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.player-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+}
+
+.player-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.player-info {
+    padding: 20px;
+}
+
+.player-info h3 {
+    margin-bottom: 5px;
+}
+
+.player-position {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 3px 10px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.player-age, .player-history {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Matches Page */
+.matches-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.match-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.match-date {
+    background-color: #1a3a6c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+}
+
+.match-day {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.match-month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.match-details {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-logo {
+    width: 50px;
+    height: 50px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.vs {
+    font-weight: 700;
+    color: #1a3a6c;
+    margin: 0 20px;
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.match-time {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.match-venue {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* About Page */
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0c808;
+}
+
+.staff-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.staff-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 20px;
+}
+
+.staff-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Contact Page */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-details div {
+    margin-bottom: 25px;
+}
+
+.contact-details i {
+    color: #1a3a6c;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1a3a6c;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #f0c808;
+    transform: translateY(-5px);
+    
+
+.social-links a.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social-links a.facebook:hover {
+    background-color: #1877f2;
+}
+
+.social-links a.instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-links a.youtube:hover {
+    background-color: #ff0000;
+}
+
+.social-links a.whatsapp:hover {
+    background-color: #25d366;
+}
+
+/* Add this to your existing .social-links a:hover rule */
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+}
+
+/* Partners Section */
+.partners {
+    background-color: #f5f7fa;
+    padding: 60px 0;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.partner-logo {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a3a6c;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
+    color: #f0c808;
+}
+
+.footer-section h3 {
+    color: #f0c808;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f0c808;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    
+    .match-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .match-info {
+        margin-left: 0;
+        margin-top: 15px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1a3a6c;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s;
+        z-index: 999;
+    }
+    
+    nav ul.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .match-date {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .players-container, .news-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .teams {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .vs {
+        margin: 10px 0;
+    }
+}
+
+/* Social Media Widgets */
+.social-media-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-widget {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.social-widget h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-widget h3 i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.tweet-placeholder {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #1da1f2;
+}
+
+.tweet-time {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.insta-post {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.insta-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.insta-post:hover img {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Contact */
+.whatsapp-contact .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Screen reader only text */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Share buttons */
+.share-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.share-buttons span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+}
